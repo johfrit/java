@@ -3,13 +3,13 @@ import java.util.Scanner;
 class joh{
     public static void main(String[] args) {
         Scanner scan=new Scanner(System.in);
-        int a=scan.nextInt();
-        int b=scan.nextInt();
-        int c;
-        while(b!=0){
-        c=b;
-        b=a%b;
-        a=c;
+        int num1 =scan.nextInt();
+        int num2 =scan.nextInt();
+        int temp;
+        while(num2!=0){
+        temp = num2;
+        num2=num1 % num2;
+        num1 =temp;
         }
         System.out.println(a);
         
